@@ -1,0 +1,111 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+body {
+  background: no-repeat;
+  background-attachment: fixed;
+  background-image: url(6.jpg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100%;
+}
+
+.text {
+  text-align: center;
+  margin: 0;
+}
+
+.text h1 {
+  font-size: 5em;
+  margin: 0;
+  border-style: groove;
+  border-radius: 30px;
+  border-color: rgba(86, 209, 151, 0.5);
+  background-color: rgba(160, 177, 244, 0.356);
+  cursor: default;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.motivation-box {
+  flex: 1 0 30%; /* Adjust as needed for box width and margin */
+  margin: 10px;
+  padding: 10px;
+  background-color: rgba(160, 177, 244, 0.356);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 25px;
+}
+
+.top-left {
+  align-self: flex-start;
+  justify-self: flex-start;
+}
+
+.top-right {
+  align-self: flex-start;
+  justify-self: flex-end;
+}
+
+.bottom-left {
+  align-self: flex-end;
+  justify-self: flex-start;
+}
+
+.bottom-right {
+  align-self: flex-end;
+  justify-self: flex-end;
+}
+
+.top-center {
+  align-self: center;
+  justify-self: center;
+}
+
+.motivation-box:hover {
+  transform: scale(1.1);
+}
+
+.box-content {
+  display: none;
+}
+
+.motivation-box:hover .box-content {
+  display: block;
+}
+
+h2 {
+  font-size: 2em;
+  margin: 0;
+  border-style: groove;
+  border-radius: 10px;
+  border-color: rgba(141, 12, 12, 0.438);
+}
+
+/* New motivation box for audio */
+.motivation-box.top-center {
+  align-self: flex-start;
+  justify-self: center;
+}
+
+/* Audio styling */
+#audio-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0px;
+}
+
+#video {
+  margin: 0;
+}
